@@ -1,0 +1,63 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+.title {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+.fondo {
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 20px; /* espacio entre productos */
+  padding: 20px;
+}
+.producto1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+   width: 100%;
+border: 2px solid black; /* borde negro */
+  height: 300px; /* altura fija */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 6px;
+}
+.agregarproducto {
+  background-color: #404850; /* negro elegante */
+  color: #fff; /* texto blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+  .btn-categoria {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-categoria:hover {
+  background-color: #333;
+}

@@ -1,0 +1,36 @@
+    .seccion-contacto {
+      padding: 3rem 1rem;
+    }
+
+    .icono {
+      font-size: 2rem;
+      color: #2563eb;
+      background-color: #e0edff;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .titulo-seccion {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .descripcion {
+      color: #6c757d;
+    }
+
+    .boton-principal {
+      background-color: #1b1b1b;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+      margin-bottom: 1rem;
+    }
+    

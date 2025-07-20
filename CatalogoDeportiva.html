@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Deportivo - Stylex</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/jpeg" href="imagenes/logo/logo.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f0f0;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .seccion-productos {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .rejilla-catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .tarjeta-producto {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .tarjeta-producto:hover {
+            transform: scale(1.03);
+        }
+
+        .tarjeta-producto img {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        .contenido-tarjeta {
+            padding: 15px;
+        }
+
+        .contenido-tarjeta h3 {
+            margin: 0;
+            color: #222;
+        }
+
+        .contenido-tarjeta p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .precio {
+            font-weight: bold;
+            color: #7c7c7c;
+        }
+
+        .contenido-tarjeta button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: #111;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contenido-tarjeta button:hover {
+            background-color: #919190;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- NAVBAR SUPERIOR -->
+<header class="topbar">
+    <div class="logo">
+        <img src="imagenes/Logo/logolarge.png" alt="Stylex Logo">
+    </div>
+
+
+    <div class="icons">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-heart"></i>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </div>
+</header>
+
+<nav class="menubar">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="sesion.html">Iniciar Sesión</a>
+    <a href="contacto.html">Contáctanos</a>
+</nav>
+
+<!-- ROPA DEPORTIVA PARA HOMBRES -->
+
+<h2>Ropa Deportiva para Hombres</h2>
+<div class="seccion-productos rejilla-catalogo">
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/Cojunto4M.jpg">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Runner Max	</h3>
+            <p>Ideal para entrenamiento y comodidad diaria.</p>
+            <p class="precio">S/ 78.40</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoMas-N.html'">Ver más</button>
+        </div>
+    </div>
+
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/Cojunto5M.jpg">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Sport Classic</h3>
+            <p>Diseño moderno con tela transpirable.</p>
+            <p class="precio">S/ 70.10</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoMas-GY.html'">Ver más</button>
+        </div>
+    </div>
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/Cojunto6M.jpg">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Urban Fit</h3>
+            <p>Para actividades al aire libre o gimnasio.</p>
+            <p class="precio">S/ 63.70</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoMas-GZ.html'">Ver más</button>
+        </div>
+    </div>
+</div>
+
+<!-- ROPA DEPORTIVA PARA MUJERES -->
+
+<h2>Ropa Deportiva para Mujeres</h2>
+<div class="seccion-productos rejilla-catalogo">
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/Cojunto1M.jpg">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Femenino - Deportivo</h3>
+            <p>Comodidad y estilo para tus entrenamientos.</p>
+            <p class="precio">S/ 80.90</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoFem-N.html'">Ver más</button>
+        </div>
+    </div>
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/Cojunto2M.jpg">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Femenino - Deportivo</h3>
+            <p>Diseño ajustado y transpirable.</p>
+            <p class="precio">S/ 80.90</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoFem-R.html'">Ver más</button>
+        </div>
+    </div>
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/Cojunto3M.jpg">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Femenino - Yoga</h3>
+            <p>Perfecto para yoga, pilates o running.</p>
+            <p class="precio">S/ 69.99</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoFem-RY.html'">Ver más</button>
+        </div>
+    </div>
+    
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/ConjuntoDeportivo1.webp">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Femenino - Deportivo</h3>
+            <p>Diseño Libre y transpirable.</p>
+            <p class="precio">S/ 63.70</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoFem-NE.html'">Ver más</button>
+        </div>
+    </div>
+
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/ConjuntoDeportivo2.webp">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Femenino - Podium</h3>
+            <p>Perfecto para correr y fresco para el dia.</p>
+            <p class="precio">S/ 69.68</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoFem-ZE.html'">Ver más</button>
+        </div>
+    </div>
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/ConjuntoDeportivo3.webp">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Femenino - Buzo</h3>
+            <p>Perfecto para el dia y comodo al hacer ejercicios</p>
+            <p class="precio">S/ 78.40</p>
+            <button onclick="location.href='RopaDeportiva/ConuntoFem-TE.html'">Ver más</button>
+        </div>
+    </div>
+</div>
+
+<!-- ROPA DEPORTIVA PARA NIÑOS -->
+
+<h2>Ropa Deportiva para Niños</h2>
+<div class="seccion-productos rejilla-catalogo">
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/Cojunto7M.jpg">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Deportivo Mini Pro</h3>
+            <p>Diseñado para el juego y el deporte.</p>
+            <p class="precio">S/ 42.49</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoNiñ-GT.html'">Ver más</button>
+        </div>
+    </div>
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/ConjuntoDeportivoN1.avif">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Casual Niño</h3>
+            <p>Colores alegres y material resistente.</p>
+            <p class="precio">S/ 35.75</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoNiñ-YT.html'">Ver más</button>
+        </div>
+    </div>
+
+    <div class="tarjeta-producto">
+        <img src="imagenes/deportivo/ConjuntoDeportivoN2.avif">
+        <div class="contenido-tarjeta">
+            <h3>Conjunto Little Sport</h3>
+            <p>Colores alegres y material resistente.</p>
+            <p class="precio">S/ 53.25</p>
+            <button onclick="location.href='RopaDeportiva/ConjuntoNiñ_TZ.html'">Ver más</button>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-stylex">
+    <div class="footer-container">
+        <p>&copy; 2025 <strong>Stylex Ropa</strong> | Moda que inspira</p>
+
+        <nav class="footer-nav">
+            <a href="PoliticadePrivacidad.html">Política de privacidad</a>
+            <a href="TerminosyCondiciones.html">Términos y condiciones</a>
+            <a href="contacto.html">Contáctanos</a>
+        </nav>
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://wa.me" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

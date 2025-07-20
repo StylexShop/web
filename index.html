@@ -1,0 +1,222 @@
+<!DOCTYPE html>   <!-- REVISA LA LINEA 206 -->
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stylex</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/stiloscateg.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/mapa.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/jpeg" href="imagenes/logo/logo.png" />
+
+  <style>
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nombre-usuario {
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .cerrar-sesion {
+      cursor: pointer;
+      color: red;
+      font-size: 12px;
+      margin-left: 6px;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR -->
+  <header class="topbar">
+    <div class="logo">
+      <img src="imagenes/Logo/logolarge.png" alt="Stylex Logo" />
+    </div>
+
+    <div class="search-container">
+      <input type="text" placeholder="¿Qué estás buscando?" />
+      <i class="fas fa-search"></i>
+    </div>
+
+    <div class="icons">
+      <div class="user-info">
+        <i class="fas fa-user"></i>
+        <span id="nombre-usuario" class="nombre-usuario"></span>
+      </div>
+      <i class="fas fa-heart"></i>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- BARRA DE MENÚ -->
+  <nav class="menubar">
+    <a href="#inicio">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="Carrito.html">Carrito</a>
+    <a href="sesion.html">Iniciar Sesión</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+  <!-- SLIDER -->
+  <div class="container-slider">
+    <div class="slider" id="slider">
+      <div class="slider__section">
+        <img src="imagenes/Slider/Imagen2.png" alt="" class="slider__img" />
+      </div>
+      <div class="slider__section">
+        <img src="imagenes/Slider/Imagen3.jpg" alt="" class="slider__img" />
+      </div>
+      <div class="slider__section">
+        <img src="imagenes/Slider/Imagen4.png" alt="" class="slider__img" />
+      </div>
+      <div class="slider__section">
+        <img src="imagenes/Slider/Imagen1.png" alt="" class="slider__img" />
+      </div>
+    </div>
+    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+  </div>
+
+  <!-- INICIO -->
+  <section id="inicio" class="inicio-stylex">
+    <div class="inicio-content">
+      <h1>Bienvenido a <strong>Stylex</strong></h1>
+      <p>
+        Descubre la fusión perfecta entre moda y estilo en nuestra tienda online. En Stylex te ofrecemos ropa de alta calidad para hombres, mujeres y niños, con diseños únicos y precios accesibles.
+      </p>
+      <p>
+        Renueva tu armario con nuestras últimas colecciones, promociones exclusivas y un catálogo que se adapta a cada temporada. ¡Viste con confianza, viste Stylex!
+      </p>
+    </div>
+  </section>
+
+  <!-- BANNER DE CATALOGO -->
+  <section id="catalogo" class="ropa-banner">
+    <div class="banner-content">
+      <img src="imagenes/Abrigos/AbrigoStrepLana.jpg" />
+      <div class="text-banner">
+        <h2>NUEVAS <span>OFERTAS</span></h2>
+        <p>edición ABRIGOS</p>
+        <a href="#catalogo" class="btn-banner">Ver más →</a>
+      </div>
+      <img src="imagenes/Abrigos/AbrigoMarquisFebig.jpg" />
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="categories">
+    <div class="category-box">
+      <h3>Lo mejor <strong>Hombre</strong></h3>
+      <img src="imagenes/Abrigos/CasacaHombre.jpg" alt="Hombre" />
+      <div class="btn-group">
+        <button onclick="location.href='Seccion-Polos.html';">Polos</button>
+        <button>Camisas</button>
+        <button>Poleras</button>
+        <button>Casacas</button>
+        <button>Buzos</button>
+        <button>Jeans</button>
+      </div>
+    </div>
+
+    <div class="category-box">
+      <h3>Lo mejor <strong>Mujer</strong></h3>
+      <img src="imagenes/Abrigos/CasacaFemenina.jpg" alt="Mujer" />
+      <div class="btn-group">
+        <button>Polos</button>
+        <button>Camisas</button>
+        <button>Poleras</button>
+        <button>Casacas</button>
+        <button>Buzos</button>
+        <button>Jeans</button>
+      </div>
+    </div>
+
+    <div class="category-box">
+      <h3>Lo mejor <strong>Infantil</strong></h3>
+      <img src="imagenes/Abrigos/CasacaNiño.jpg" alt="Niños" />
+      <div class="btn-group">
+        <button>Polos</button>
+        <button>Camisas</button>
+        <button>Poleras</button>
+        <button>Casacas</button>
+        <button>Buzos</button>
+        <button>Jeans</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA DEPORTIVA -->
+  <section id="catalogo" class="ropa-banner">
+    <div class="banner-content">
+      <img src="imagenes/deportivo/Cojunto3M.jpg" />
+      <div class="text-banner">
+        <h2>EDICIÓN <span>DEPORTIVA</span></h2>
+        <p>Para niños y adultos</p>
+        <a href="CatalogoDeportiva.html" class="btn-banner">Ver más →</a>
+      </div>
+      <img src="imagenes/deportivo/Cojunto5M2.jpg" />
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section class="ubicacion">
+    <h2>Encuéntranos aquí</h2>
+    <div class="mapa">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.945597879154!2d-77.02823918478226!3d-12.046374491442312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f5ef0d94b7%3A0x3c7cdb0a0b36b05e!2sPlaza%20Mayor%20de%20Lima!5e0!3m2!1ses!2spe!4v1695943493028!5m2!1ses!2spe" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-stylex">
+    <div class="footer-container">
+      <p>&copy; 2025 <strong>Stylex Ropa</strong> | Moda que inspira</p>
+      <nav class="footer-nav">
+        <a href="PoliticadePrivacidad.html">Política de privacidad</a>
+        <a href="TerminosyCondiciones.html">Términos y condiciones</a>
+        <a href="contacto.html">Contáctanos</a>
+      </nav>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://wa.me" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/slider.js"></script>
+
+  <!-- PRUEBA ESO -->
+  <script>
+    const usuarioActual = JSON.parse(localStorage.getItem('usuarioActual'));
+    const nombreSpan = document.getElementById('nombre-usuario');
+    const cerrarSesionBtn = document.getElementById('cerrar-sesion');
+
+    if (usuarioActual && usuarioActual.nombre) {
+      nombreSpan.textContent = usuarioActual.nombre;
+      cerrarSesionBtn.style.display = 'inline';
+    }
+
+    cerrarSesionBtn.addEventListener('click', () => {
+      localStorage.removeItem('usuarioActual');
+      location.reload();
+    });
+  </script>
+</body>
+</html>

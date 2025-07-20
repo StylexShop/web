@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro - Stylex</title>
+  <link rel="stylesheet" href="css/iniciosesion.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/jpeg" href="imagenes/logo/logo.png" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: #f0ecec;
+      padding: 14px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      color: rgb(0, 0, 0);
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .contenedor-login {
+      max-width: 400px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    form label {
+      display: block;
+      margin: 12px 0 6px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .campo {
+      position: relative;
+    }
+
+    .campo input {
+      width: 100%;
+      padding: 10px 35px 10px 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .campo i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: #666;
+    }
+
+    .boton {
+      width: 100%;
+      padding: 12px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: #444;
+    }
+
+    .texto-registro {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .texto-registro a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .texto-registro a:hover {
+      text-decoration: underline;
+    }
+
+    footer.footer-stylex {
+      background-color: #f0ecec;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .footer-stylex p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .footer-nav {
+      margin-top: 10px;
+    }
+
+    .footer-nav a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">STYLEX</div>
+  </nav>
+
+  <!-- FORMULARIO DE REGISTRO -->
+  <div class="contenedor-login">
+    <h2><i class="fas fa-user-plus"></i> Registrarse</h2>
+    <form id="formulario-registro">
+      <label for="nombre">Nombre</label>
+      <div class="campo">
+        <input type="text" id="nombre" name="nombre" required>
+        <i class="fas fa-user"></i>
+      </div>
+
+      <label for="correo">Correo electrónico</label>
+      <div class="campo">
+        <input type="email" id="correo" name="correo" required>
+        <i class="fas fa-envelope"></i>
+      </div>
+
+      <label for="clave">Contraseña</label>
+      <div class="campo">
+        <input type="password" id="clave" name="clave" required>
+        <i class="fas fa-lock"></i>
+      </div>
+
+      <button type="submit" class="boton"><i class="fas fa-check"></i> Registrarse</button>
+    </form>
+
+    <p class="texto-registro">¿Ya tienes cuenta? <a href="sesion.html">Inicia sesión aquí</a></p>
+  </div>
+
+
+  <!-- JS -->
+  <script src="js/register.js"></script>
+
+</body>
+</html>

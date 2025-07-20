@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.contenedor-login {
+  max-width: 400px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.campo-clave {
+  position: relative;
+}
+
+.campo-clave i {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  cursor: pointer;
+  color: #666;
+}
+
+.olvido-clave {
+  display: block;
+  text-align: right;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #1758ad;
+  text-decoration: none;
+}
+
+.boton {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.boton:hover {
+  background-color: #646566;
+}
+
+.texto-registro {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.texto-registro a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.inicio-redes p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.boton-google,
+.boton-facebook {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.boton-salida  {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.boton-google {
+  background-color: #dd4b39;
+}
+
+.boton-facebook {
+  background-color: #3b5998;
+}
+.boton-salida {
+  background-color: rgb(49, 49, 49);
+}
+.boton-google i,
+.boton-facebook i,
+.boton-salida {
+  margin-right: 8px;
+}
+

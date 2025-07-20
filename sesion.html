@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/iniciosesion.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/jpeg" href="imagenes/logo/logo.png" />
+  <style>
+    .navbar {
+      background-color: #f0ecec;
+      padding: 14px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      color: rgb(0, 0, 0);
+      font-size: 40px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">STYLEX</div>
+  </nav>
+
+  <div class="contenedor-login">
+    <h2>Iniciar Sesión</h2>
+    <form id="formulario-login">
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" required />
+
+      <label for="clave">Contraseña</label>
+      <div class="campo-clave">
+        <input type="password" id="clave" name="clave" required />
+        <i class="fas fa-eye" id="verClave"></i>
+      </div>
+
+      <a href="#" class="olvido-clave">¿Olvidaste tu contraseña?</a>
+
+      <button type="submit" class="boton">Entrar</button>
+    </form>
+
+    <p class="texto-registro">¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+
+    <div class="inicio-redes">
+
+      <button class="boton-salida" onclick="location.href='index.html';">
+        <i class="fa-solid fa-right-from-bracket"></i> Salir
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer-stylex">
+    <div class="footer-container">
+      <p>&copy; 2025 <strong>Stylex Ropa</strong> | Moda que inspira</p>
+      <nav class="footer-nav">
+        <a href="PoliticadePrivacidad.html">Política de privacidad</a>
+        <a href="TerminosyCondiciones.html">Términos y condiciones</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/sesion.js"></script>
+</body>
+</html>
