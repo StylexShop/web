@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0 url('../img/Slider/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+nav {
+    background: rgba(201, 200, 200, 0.808);
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    font-size: 40px;
+}
+.formulario {
+    background: white;
+    padding: 59px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 8px 20px rgba(245, 245, 245, 0.993);
+}
+
+.columna {
+    flex: 1;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background: #f9f9f9;
+}
+
+input[type="submit"],
+.boton-volver {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    padding: 12px 30px;
+    margin: 25px auto;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover,
+.boton-volver:hover {
+    background: #a5a4a4;
+    color: black;
+}
+
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+.boton-talla {
+    padding: 7px 20px;
+    margin: 5px 5px 5px 0;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.boton-talla.activo {
+    background: #333;
+    color: white;
+}
+
+.boton-volver {
+    display: block;
+    margin: 25px auto;
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 11px 90px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+    transition: background 0.3s ease;
+}
+
+.boton-volver:hover {
+    background: #a5a4a4;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+.color-item {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background: #333;
+    color: white;
+    border-radius: 6px;
+    position: relative;
+}
+
+.color-item span {
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#agregar-color {
+    padding: 7px 20px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#agregar-color:hover {
+    background: #a5a4a4;
+    color: black;
+}

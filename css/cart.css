@@ -1,0 +1,101 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f0f0;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .seccion-productos {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 1300px;
+        }
+
+        .rejilla-catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .tarjeta-producto {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .tarjeta-producto:hover {
+            transform: scale(1.03);
+        }
+
+        .tarjeta-producto img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .contenido-tarjeta {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .contenido-tarjeta h3 {
+            margin: 0;
+            color: #222;
+            font-size: 16px;
+        }
+
+        .contenido-tarjeta p {
+            font-size: 13px;
+            color: #555;
+            margin: 0;
+        }
+
+        .precio {
+            font-weight: bold;
+            color: #e67e22;
+            font-size: 15px;
+        }
+
+        .estrellas {
+            color: #f1c40f;
+            font-size: 14px;
+        }
+
+        .tallas, .colores {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .botones-producto {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .botones-producto button {
+            flex: 1;
+            padding: 8px;
+            background-color: #111;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: background 0.3s;
+        }
+
+        .botones-producto button:hover {
+            background-color: #555;
+        }

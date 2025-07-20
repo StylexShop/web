@@ -1,0 +1,219 @@
+/* RESET GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../img/Slider/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #f0ecec;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor-login {
+  max-width: 400px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.7); 
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* TÍTULO */
+h2 {
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 1.8rem;
+}
+
+/* FORMULARIO GENERAL */
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* INPUTS CON ICONOS */
+.campo {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.campo input,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #000;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.campo i {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+/* CAMPO CLAVE CON OJO */
+.campo-clave {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.campo-clave input {
+  padding-right: 40px;
+}
+
+.campo-clave i {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* ENLACE: ¿Olvidaste tu contraseña? */
+.olvido-clave {
+  display: block;
+  text-align: right;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #055380;
+  text-decoration: none;
+}
+
+.olvido-clave:hover {
+  text-decoration: underline;
+}
+
+/* BOTÓN DE ACCIÓN */
+.boton {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #333333;
+}
+
+/* TEXTO DE REGISTRO / INICIO */
+.texto-registro {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.texto-registro a {
+  color: #1e1e1e;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.texto-registro a:hover {
+  color: #000;
+}
+
+/* BOTÓN SALIR */
+.inicio-redes {
+  margin-top: 10px;
+}
+
+.boton-salida {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.boton-salida:hover {
+  background-color: #333333;
+}
+.boton-salida i {
+  margin-right: 8px;
+}
+
+/* MENSAJE DE ERROR */
+.error-msg {
+  background-color: #ffe6e6;
+  color: #c0392b;
+  border-left: 5px solid #c0392b;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .contenedor-login {
+    margin: 30px 20px;
+    padding: 1.5rem;
+  }
+
+  .boton-salida {
+    width: 100%;
+  }
+}

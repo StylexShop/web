@@ -1,0 +1,104 @@
+/* CONTENEDOR PRINCIPAL */
+.user-display {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.336);
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* AVATAR */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #00c6c6;
+    border-radius: 50%;
+    background-image: url('../img/Avatar/perfil.png'); /* Cambiar si se desea imagen real */
+    background-size: cover;
+    background-position: center;
+}
+
+/* TEXTO DEL USUARIO */
+.user-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.user-text span {
+    font-weight: bold;
+    color: #1e1e1e;
+    font-size: 14px;
+}
+
+.user-text small {
+    font-size: 12px;
+    color: #7d7d7d;
+}
+
+/* FLECHITA ▼ */
+.user-display::after {
+    content: "▼";
+    font-size: 12px;
+    margin-left: auto;
+    color: #1e1e1e;
+}
+
+/* MENÚ DESPLEGABLE */
+.user-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 0 10px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 170px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.507);
+}
+
+/* MENÚ ABIERTO */
+.user-display.open .user-content {
+    max-height: 300px;
+    padding: 10px;
+}
+
+/* BOTONES DEL MENÚ (ESTILO IGUAL AL AVATAR) */
+.action-button {
+    display: block;
+    background-color: #eeebeb;
+    color: black;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.action-button:hover {
+    background-color: #a8a6a6;
+}
+
+/* CERRAR SESIÓN: SOLO CAMBIA UN POCO AL PASAR EL CURSOR */
+.logout {
+    background-color: #eeebeb;
+}
+
+.logout:hover {
+    background-color: #a8a6a6;
+}

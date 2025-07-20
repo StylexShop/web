@@ -1,4 +1,3 @@
-// JAVASCRIPT CORREGIDO
 // Declarar todas las variables necesarias
 const slider = document.querySelector('#slider');
 const btnRight = document.querySelector('#btn-right');
